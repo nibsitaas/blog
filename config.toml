@@ -1,3 +1,45 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://nibsi.online/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'blog@nibsi.online'
+theme =  ["github.com/Mitrichius/hugo-theme-anubis"]
+googleAnalytics = "G-H0LECCQNPF"
+enableRobotsTXT = true
+
+[author]
+name = "Nibsi"
+
+[params]
+author = "Nibsi"
+description = "A Blog of sorts."
+dateFormat = "01-12-2023"
+paginationSinglePost = true
+style = "auto"
+readMore = false
+readNextPosts = 2
+copyCodeButton = true
+rssAsSocialIcon = true
+
+[[params.social]]
+id = "github"
+url = "https://github.com/nibsitaas"
+
+[menu]
+
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+weight = 1
+
+[[menu.main]]
+name = "Archive"
+identifier = "archive"
+url = "/posts/"
+weight = 2
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+
+[markup.goldmark.renderer]
+unsafe = true
